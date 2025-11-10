@@ -19,11 +19,14 @@ export default function Hero() {
             <p className="text-xl text-text-secondary max-w-xl">
               It needs strategy, execution, and the right expertise working together.
             </p>
-            <p className="text-lg text-text-secondary max-w-xl">
-              We&apos;re Energized Response, a GTM and RevOps agency built for B2B SaaS companies ready to scale. 
-              We combine AI-powered acceleration with proven methodologies to turn your go-to-market motion into 
-              a predictable growth engine.
-            </p>
+            <div className="space-y-4 max-w-xl">
+              <p className="text-lg font-semibold text-text-primary">
+                Scalable, repeatable growth strategies for scaling B2B SaaS companies ($5-$50M ARR) that put smiles on board members&apos; faces.
+              </p>
+              <p className="text-lg text-text-secondary">
+                AI-accelerated revenue strategies with proven human expertise. We don&apos;t skip steps—we ruthlessly expedite the right parts of your GTM to get you to real revenue results faster.
+              </p>
+            </div>
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4" data-no-cursor-logos>
