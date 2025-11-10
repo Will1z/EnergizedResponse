@@ -12,36 +12,32 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Copy */}
-          <div className="space-y-8">
-            <h1 className="text-balance">
-              Your GTM Engine Needs More Than Tools
+          <div className="space-y-8 text-center lg:text-left">
+            <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
+              GTM Strategy Agency for B2B SaaS Companies That Need More Than Tools
             </h1>
-            <p className="text-xl text-text-secondary max-w-xl">
-              It needs strategy, execution, and the right expertise working together.
+            
+            <p className="text-lg md:text-xl leading-relaxed text-text-secondary max-w-2xl mx-auto lg:mx-0">
+              We help B2B SaaS companies ($5M-$50M ARR) build scalable, repeatable GTM systems that turn growth uncertainty into predictable revenue.
             </p>
-            <div className="space-y-4 max-w-xl">
-              <p className="text-lg font-semibold text-text-primary">
-                Scalable, repeatable growth strategies for scaling B2B SaaS companies ($5-$50M ARR) that put smiles on board members&apos; faces.
-              </p>
-              <p className="text-lg text-text-secondary">
-                AI-accelerated revenue strategies with proven human expertise. We don&apos;t skip steps—we ruthlessly expedite the right parts of your GTM to get you to real revenue results faster.
-              </p>
-            </div>
+            
+            <p className="text-base md:text-lg text-text-secondary leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              Our AI-driven GTM frameworks combine strategy, data, and proven human expertise to accelerate your next growth phase - faster than traditional agencies.
+            </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4" data-no-cursor-logos>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" data-no-cursor-logos>
               <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-base text-background rounded-lg font-semibold hover:shadow-lg hover:shadow-base/20 transition-all hover:scale-[1.02] group"
+                href="/#contact"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent-yellow text-base rounded-md font-semibold hover:brightness-95 transition"
               >
-                {commonData.ctaPrimary}
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                Start a Conversation
               </Link>
               <Link
                 href="/#methodology"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-base text-base rounded-lg font-semibold hover:border-text-primary hover:shadow-md transition-all"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 border border-base rounded-md font-semibold hover:bg-base hover:text-background transition"
               >
-                {commonData.ctaSecondary}
+                See How We Work
               </Link>
             </div>
           </div>
