@@ -12,17 +12,17 @@ export default function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: Copy */}
-          <div className="space-y-8 text-center lg:text-left">
-            <h1 className="text-5xl md:text-6xl font-bold leading-tight tracking-tight">
+          <div className="space-y-6 text-center lg:text-left">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
               GTM Strategy Agency for B2B SaaS Companies That Need More Than Tools
             </h1>
             
-            <p className="text-lg md:text-xl leading-relaxed text-text-secondary max-w-2xl mx-auto lg:mx-0">
+            <p className="mt-4 text-base md:text-lg leading-relaxed text-gray-400 max-w-2xl mx-auto lg:mx-0">
               We help B2B SaaS companies ($5M-$50M ARR) build scalable, repeatable GTM systems that turn growth uncertainty into predictable revenue.
             </p>
             
-            <p className="text-base md:text-lg text-text-secondary leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Our AI-driven GTM frameworks combine strategy, data, and proven human expertise to accelerate your next growth phase - faster than traditional agencies.
+            <p className="text-sm text-gray-300 max-w-2xl mx-auto lg:mx-0">
+              Our AI-driven GTM frameworks combine strategy, data, and human expertise to accelerate growth faster than traditional agencies.
             </p>
 
             {/* CTAs */}
