@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Reveal from "@/components/Reveal";
 import { Mail, Calendar } from "lucide-react";
+import commonData from "@/content/common.json";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ export default function Contact() {
           <div className="text-center mb-16">
             <h1 className="mb-6">Start a Conversation</h1>
             <p className="text-xl text-text-secondary max-w-2xl mx-auto">
-              Ready to build your GTM engine? Let's talk about your challenges and how we can help.
+              Ready to build your GTM engine? Let&apos;s talk about your challenges and how we can help.
             </p>
           </div>
         </Reveal>
@@ -125,10 +126,10 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold mb-2">Email Us</h4>
                       <a
-                        href="mailto:ko@energizedresponse.com"
+                        href={`mailto:${commonData.contactEmail}`}
                         className="text-text-secondary hover:text-text-primary transition-colors"
                       >
-                        ko@energizedresponse.com
+                        {commonData.contactEmail}
                       </a>
                     </div>
                   </div>

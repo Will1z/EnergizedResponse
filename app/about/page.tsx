@@ -16,7 +16,7 @@ export default function About() {
 
         <div className="flex flex-col md:flex-row gap-8 items-start mb-12">
           <Reveal delay={0.1}>
-            <div className="flex flex-col items-center md:items-start flex-shrink-0">
+            <div className="flex flex-col items-center flex-shrink-0 w-full md:w-auto">
               <div className="w-64 h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden relative">
                 <Image 
                   src="/kevin-photo.jpg" 

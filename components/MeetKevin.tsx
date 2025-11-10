@@ -15,7 +15,7 @@ export default function MeetKevin() {
 
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <Reveal delay={0.1}>
-            <div className="flex flex-col items-center md:items-start flex-shrink-0">
+            <div className="flex flex-col items-center flex-shrink-0 w-full md:w-auto">
               <div className="w-64 h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden relative">
                 <Image 
                   src="/kevin-photo.jpg" 
@@ -30,7 +30,7 @@ export default function MeetKevin() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-text-secondary hover:text-text-primary transition-colors"
-                  aria-label="Kevin's LinkedIn Profile"
+                  aria-label="Kevin&apos;s LinkedIn Profile"
                 >
                   <Linkedin size={24} />
                 </a>
