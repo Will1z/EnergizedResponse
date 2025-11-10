@@ -21,7 +21,7 @@ export default function Hero() {
               We help B2B SaaS companies ($5M-$50M ARR) build scalable, repeatable GTM systems that turn growth uncertainty into predictable revenue.
             </p>
             
-            <p className="text-sm text-gray-300 max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base md:text-lg leading-relaxed text-gray-400 max-w-2xl mx-auto lg:mx-0">
               Our AI-driven GTM frameworks combine strategy, data, and human expertise to accelerate growth faster than traditional agencies.
             </p>
 
