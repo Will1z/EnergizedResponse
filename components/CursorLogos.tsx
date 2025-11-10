@@ -1,0 +1,113 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const logos = [
+  "/logos/outreach.svg",
+  "/logos/salesloft.svg",
+  "/logos/apollo.svg",
+  "/logos/clay.svg",
+  "/logos/zoominfo.svg",
+  "/logos/seamless.svg",
+  "/logos/clearbit.svg",
+  "/logos/lusha.svg",
+  "/logos/hubspot.svg",
+  "/logos/salesforce.svg",
+];
+
+interface Logo {
+  id: number;
+  src: string;
+  x: number;
+  y: number;
+}
+
+export default function CursorLogos() {
+  const [logoList, setLogoList] = useState<Logo[]>([]);
+  const counter = useRef(0);
+  const lastSpawnTime = useRef(0);
+
+  useEffect(() => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const now = Date.now();
+      
+      // Throttle: only spawn every 150ms
+      if (now - lastSpawnTime.current < 150) return;
+      
+      counter.current++;
+      if (counter.current % 2 !== 0) return;
+
+      // Check if cursor is over text, buttons, links, inputs, or interactive elements
+      const target = e.target as HTMLElement;
+      const tagName = target.tagName.toLowerCase();
+      
+      if (
+        target.closest("nav") ||
+        target.closest("button") ||
+        target.closest("a") ||
+        target.closest("input") ||
+        target.closest("textarea") ||
+        target.closest("form") ||
+        target.closest("[data-no-cursor-logos]") ||
+        tagName === "h1" ||
+        tagName === "h2" ||
+        tagName === "h3" ||
+        tagName === "h4" ||
+        tagName === "h5" ||
+        tagName === "h6" ||
+        tagName === "p" ||
+        tagName === "span" ||
+        tagName === "label" ||
+        tagName === "li"
+      ) {
+        return;
+      }
+
+      lastSpawnTime.current = now;
+
+      const newLogo: Logo = {
+        id: now,
+        src: logos[Math.floor(Math.random() * logos.length)],
+        x: e.clientX + (Math.random() * 40 - 20),
+        y: e.clientY + (Math.random() * 40 - 20),
+      };
+
+      setLogoList((prev) => [...prev.slice(-9), newLogo]);
+
+      // Auto-remove after 800ms
+      setTimeout(() => {
+        setLogoList((prev) => prev.filter((logo) => logo.id !== newLogo.id));
+      }, 800);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
+  return (
+    <div className="fixed top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-[9999]">
+      <AnimatePresence>
+        {logoList.map((logo) => (
+          <motion.img
+            key={logo.id}
+            src={logo.src}
+            alt=""
+            className="absolute w-12 h-12 object-contain opacity-70"
+            initial={{ opacity: 0, scale: 0.3 }}
+            animate={{ opacity: 0.7, scale: 1 }}
+            exit={{ opacity: 0, scale: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            style={{ 
+              top: logo.y - 24, 
+              left: logo.x - 24,
+              filter: "grayscale(100%) brightness(0)",
+            }}
+          />
+        ))}
+      </AnimatePresence>
+    </div>
+  );
+}

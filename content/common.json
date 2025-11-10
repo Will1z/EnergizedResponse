@@ -1,0 +1,19 @@
+{
+  "siteName": "Energized Response",
+  "tagline": "GTM & RevOps for B2B SaaS",
+  "contactEmail": "ko@energizedresponse.com",
+  "ctaPrimary": "Start a Conversation",
+  "ctaSecondary": "See How We Work",
+  "socialProof": {
+    "metric1": {
+      "value": 150,
+      "suffix": "%",
+      "label": "Average Pipeline Growth"
+    },
+    "metric2": {
+      "value": 40,
+      "suffix": "+",
+      "label": "B2B SaaS Clients Scaled"
+    }
+  }
+}
