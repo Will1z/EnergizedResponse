@@ -20,7 +20,7 @@ export default function Hero() {
               It needs strategy, execution, and the right expertise working together.
             </p>
             <p className="text-lg text-text-secondary max-w-xl">
-              We're Energized Response, a GTM and RevOps agency built for B2B SaaS companies ready to scale. 
+              We&apos;re Energized Response, a GTM and RevOps agency built for B2B SaaS companies ready to scale. 
               We combine AI-powered acceleration with proven methodologies to turn your go-to-market motion into 
               a predictable growth engine.
             </p>

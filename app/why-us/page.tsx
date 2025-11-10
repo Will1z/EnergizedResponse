@@ -9,7 +9,7 @@ export default function WhyUs() {
         <Reveal>
           <h1 className="mb-8">Why Energized Response Works</h1>
           <p className="text-xl text-text-secondary mb-12">
-            We're not your typical consulting firm. We're operators who've been in the trenches, 
+            We&apos;re not your typical consulting firm. We&apos;re operators who&apos;ve been in the trenches, 
             building and scaling GTM motions for B2B SaaS companies.
           </p>
         </Reveal>
@@ -20,8 +20,8 @@ export default function WhyUs() {
               <h3 className="mb-4">We Speak Your Language</h3>
               <p className="text-text-secondary">
                 No corporate jargon. No one-size-fits-all frameworks. We understand the unique challenges 
-                of B2B SaaS because we've lived them. From navigating product-market fit to scaling to 
-                enterprise, we've been there.
+                of B2B SaaS because we&apos;ve lived them. From navigating product-market fit to scaling to 
+                enterprise, we&apos;ve been there.
               </p>
             </div>
           </Reveal>
@@ -40,8 +40,8 @@ export default function WhyUs() {
             <div>
               <h3 className="mb-4">Battle-Tested Methodology</h3>
               <p className="text-text-secondary">
-                The GTM Engine isn't theory - it's a proven framework refined through 40+ engagements. 
-                We know what works because we've tested it in the real world.
+                The GTM Engine isn&apos;t theory - it&apos;s a proven framework refined through 40+ engagements. 
+                We know what works because we&apos;ve tested it in the real world.
               </p>
             </div>
           </Reveal>
@@ -50,7 +50,7 @@ export default function WhyUs() {
             <div>
               <h3 className="mb-4">Your Success Is Our Success</h3>
               <p className="text-text-secondary">
-                We don't just deliver reports and disappear. We partner with you for the long haul, 
+                We don&apos;t just deliver reports and disappear. We partner with you for the long haul, 
                 ensuring implementation success and continuous optimization.
               </p>
             </div>

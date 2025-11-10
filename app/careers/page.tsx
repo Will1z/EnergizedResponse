@@ -8,7 +8,7 @@ export default function Careers() {
         <Reveal>
           <h1 className="mb-8">Join Our Team</h1>
           <p className="text-xl text-text-secondary mb-12">
-            We're always looking for talented GTM operators, RevOps specialists, and AI enthusiasts 
+            We&apos;re always looking for talented GTM operators, RevOps specialists, and AI enthusiasts 
             to join our growing network.
           </p>
         </Reveal>
@@ -42,8 +42,8 @@ export default function Careers() {
             <div className="p-8 border border-border rounded-lg">
               <h3 className="mb-4">Open Roles</h3>
               <p className="text-text-secondary mb-6">
-                We're currently building our expert network. If you have deep expertise in any of 
-                these areas, we'd love to hear from you:
+                We&apos;re currently building our expert network. If you have deep expertise in any of 
+                these areas, we&apos;d love to hear from you:
               </p>
               <ul className="space-y-2 text-text-secondary">
                 <li>• GTM Strategy & Planning</li>

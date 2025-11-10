@@ -83,7 +83,7 @@ export default function Methodology() {
           <div className="mt-16 p-8 bg-gray-50 rounded-lg">
             <h3 className="mb-4">Why This Works</h3>
             <p className="text-text-secondary mb-4">
-              Our methodology is designed for speed and impact. We don't believe in lengthy discovery 
+              Our methodology is designed for speed and impact. We don&apos;t believe in lengthy discovery 
               phases that delay results. Instead, we move quickly from insight to action, validating 
               assumptions along the way.
             </p>

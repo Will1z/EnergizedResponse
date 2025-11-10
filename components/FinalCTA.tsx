@@ -34,7 +34,7 @@ export default function FinalCTA() {
             Uncertainty?
           </h1>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed tracking-wide max-w-3xl mx-auto">
-            Let's explore how AI-accelerated strategies and proven expertise can drive your next growth phase.
+            Let&apos;s explore how AI-accelerated strategies and proven expertise can drive your next growth phase.
           </p>
         </div>
       </div>

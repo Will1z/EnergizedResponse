@@ -1,5 +1,6 @@
 import Reveal from "./Reveal";
 import { Linkedin } from "lucide-react";
+import Image from "next/image";
 
 export default function MeetKevin() {
   return (
@@ -15,11 +16,12 @@ export default function MeetKevin() {
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <Reveal delay={0.1}>
             <div className="flex flex-col items-center md:items-start flex-shrink-0">
-              <div className="w-64 h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden">
-                <img 
+              <div className="w-64 h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden relative">
+                <Image 
                   src="/kevin-photo.jpg" 
                   alt="Kevin - Founder of Energized Response"
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
               </div>
               <div className="flex gap-4">
@@ -39,11 +41,11 @@ export default function MeetKevin() {
           <Reveal delay={0.2}>
             <div className="space-y-6 flex-1">
               <p className="text-text-secondary leading-relaxed">
-                As a seasoned marketing and sales leader with nearly two decades in B2B SaaS, I've been privileged to drive growth across companies from startups to Fortune 1000s. My journey combines relentless curiosity, mentorship from top-tier leaders, and extensive hands-on expertise.
+                As a seasoned marketing and sales leader with nearly two decades in B2B SaaS, I&apos;ve been privileged to drive growth across companies from startups to Fortune 1000s. My journey combines relentless curiosity, mentorship from top-tier leaders, and extensive hands-on expertise.
               </p>
 
               <p className="text-text-secondary leading-relaxed">
-                Today, I'm focused on solving the toughest revenue problems for B2B SaaS companies in the $10-$50M ARR range. My approach remains rooted in understanding the human side of business: genuine connections, transparent communication, and relentless focus on delivering value.
+                Today, I&apos;m focused on solving the toughest revenue problems for B2B SaaS companies in the $10-$50M ARR range. My approach remains rooted in understanding the human side of business: genuine connections, transparent communication, and relentless focus on delivering value.
               </p>
 
               <p className="text-text-secondary leading-relaxed">
