@@ -1,4 +1,5 @@
 import Link from "next/link";
+import commonData from "@/content/common.json";
 
 export default function Footer() {
   return (
@@ -23,7 +24,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-text-secondary hover:text-text-primary transition-colors">
+                <Link href="/#services" className="text-text-secondary hover:text-text-primary transition-colors">
                   Services
                 </Link>
               </li>
@@ -33,7 +34,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-text-secondary hover:text-text-primary transition-colors">
+                <Link href="/#about" className="text-text-secondary hover:text-text-primary transition-colors">
                   About
                 </Link>
               </li>
@@ -56,10 +57,10 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="mailto:ko@energizedresponse.com"
+                  href={`mailto:${commonData.contactEmail}`}
                   className="text-text-secondary hover:text-text-primary transition-colors"
                 >
-                  ko@energizedresponse.com
+                  {commonData.contactEmail}
                 </a>
               </li>
             </ul>
