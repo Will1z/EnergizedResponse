@@ -14,7 +14,7 @@ export default function Hero() {
           {/* Left: Copy */}
           <div className="space-y-6 text-center lg:text-left">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
-              Your GTM Engine Needs More Than Tools
+              Resolve Your Revenue Uncertainty
             </h1>
             
             <p className="mt-4 text-base md:text-lg leading-relaxed text-gray-400 max-w-2xl mx-auto lg:mx-0">
