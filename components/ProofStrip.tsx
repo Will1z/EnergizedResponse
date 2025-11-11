@@ -4,19 +4,19 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const clients = [
-  { id: "Outreach.png", name: "Outreach" },
-  { id: "Apollo.png", name: "Apollo" },
-  { id: "Clay.jpeg", name: "Clay" },
-  { id: "Zoominfo.png", name: "ZoomInfo" },
-  { id: "Clearbit.jpeg", name: "Clearbit" },
-  { id: "HubSpot.png", name: "HubSpot" },
-  { id: "Ocean.png", name: "Ocean" },
-  { id: "builtwith.png", name: "BuiltWith" },
-  { id: "notion.png", name: "Notion" },
-  { id: "Claude.png", name: "Claude" },
-  { id: "Openai.png", name: "OpenAI" },
-  { id: "Apify.jpeg", name: "Apify" },
-  { id: "Serper.jpeg", name: "Serper" },
+  { id: "Outreach.png", name: "Outreach", showName: true },
+  { id: "Apollo.png", name: "Apollo", showName: true },
+  { id: "Clay.jpeg", name: "Clay", showName: true },
+  { id: "Zoominfo.png", name: "ZoomInfo", showName: true },
+  { id: "Clearbit.jpeg", name: "Clearbit", showName: true },
+  { id: "HubSpot.png", name: "HubSpot", showName: true },
+  { id: "Ocean.png", name: "Ocean", showName: true },
+  { id: "builtwith.png", name: "BuiltWith", showName: false },
+  { id: "notion.png", name: "Notion", showName: true },
+  { id: "Claude.png", name: "Claude", showName: true },
+  { id: "Openai.png", name: "OpenAI", showName: true },
+  { id: "Apify.jpeg", name: "Apify", showName: true },
+  { id: "Serper.jpeg", name: "Serper", showName: true },
 ];
 
 export default function ProofStrip() {
@@ -91,7 +91,9 @@ export default function ProofStrip() {
               height={32}
               className="object-contain"
             />
-            <span className="text-sm font-medium whitespace-nowrap">{client.name}</span>
+            {client.showName && (
+              <span className="text-sm font-medium whitespace-nowrap">{client.name}</span>
+            )}
           </div>
         ))}
       </div>
