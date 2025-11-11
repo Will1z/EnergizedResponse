@@ -171,7 +171,7 @@ export default function ParallaxLines() {
             className="line1"
             d="M-200,150 Q50,100 300,150 Q550,200 800,150 Q1050,100 1200,150"
             stroke="url(#grad-flow-pure)"
-            strokeWidth="3"
+            strokeWidth="1.5"
             fill="none"
             strokeDasharray="20 10"
           />
@@ -181,7 +181,7 @@ export default function ParallaxLines() {
             className="line2"
             d="M-200,250 Q50,200 300,250 Q550,300 800,250 Q1050,200 1200,250"
             stroke="url(#grad-flow-pure)"
-            strokeWidth="3"
+            strokeWidth="1.5"
             fill="none"
             strokeDasharray="25 15"
           />
@@ -191,7 +191,7 @@ export default function ParallaxLines() {
             className="line3"
             d="M-200,350 Q50,300 300,350 Q550,400 800,350 Q1050,300 1200,350"
             stroke="url(#grad-flow-pure)"
-            strokeWidth="3"
+            strokeWidth="1.5"
             fill="none"
             strokeDasharray="30 20"
           />
