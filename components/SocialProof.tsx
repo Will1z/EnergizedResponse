@@ -4,7 +4,7 @@ import commonData from "@/content/common.json";
 
 const testimonials = [
   {
-    quote: "Energized Response transformed our outbound motion in 6 weeks. Pipeline quality is up 3x and our team actually enjoys prospecting now.",
+    quote: "Nicl transformed our outbound motion in 6 weeks. Pipeline quality is up 3x and our team actually enjoys prospecting now.",
     author: "Sarah Chen",
     role: "VP Sales at CloudScale",
   },

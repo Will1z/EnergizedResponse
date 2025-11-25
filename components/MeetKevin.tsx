@@ -19,7 +19,7 @@ export default function MeetKevin() {
               <div className="w-64 h-64 bg-gray-200 rounded-lg mb-4 overflow-hidden relative">
                 <Image 
                   src="/kevin-photo.jpg" 
-                  alt="Kevin - Founder of Energized Response"
+                  alt="Kevin - Founder of Nicl"
                   fill
                   className="object-cover"
                 />

@@ -43,7 +43,7 @@ export default function Nav() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="text-xl font-bold tracking-tight">
-            Energized Response
+            Nicl
           </Link>
 
           {/* Desktop nav */}

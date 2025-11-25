@@ -30,7 +30,7 @@ export default function ValueProps() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="text-center mb-16">
-            <h2 className="mb-4">Why Energized Response Works</h2>
+            <h2 className="mb-4">Why Nicl Works</h2>
             <p className="text-xl text-text-secondary max-w-2xl mx-auto">
               We combine strategy, technology, and expertise to build GTM engines that scale.
             </p>

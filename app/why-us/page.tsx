@@ -7,7 +7,7 @@ export default function WhyUs() {
     <div className="pt-24 pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <Reveal>
-          <h1 className="mb-8">Why Energized Response Works</h1>
+          <h1 className="mb-8">Why Nicl Works</h1>
           <p className="text-xl text-text-secondary mb-12">
             We&apos;re not your typical consulting firm. We&apos;re operators who&apos;ve been in the trenches, 
             building and scaling GTM motions for B2B SaaS companies.

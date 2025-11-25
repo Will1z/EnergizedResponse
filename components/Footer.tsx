@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Energized Response</h3>
+            <h3 className="text-xl font-bold mb-4">Nicl</h3>
             <p className="text-text-secondary text-sm max-w-md">
               Expert GTM and RevOps agency helping B2B SaaS companies scale with AI-powered strategies.
             </p>
@@ -69,7 +69,7 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="mt-12 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-secondary">
-          <p>&copy; {new Date().getFullYear()} Energized Response. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Nicl. All rights reserved.</p>
           <div className="flex gap-6">
             <Link href="/privacy" className="hover:text-text-primary transition-colors">
               Privacy Policy
